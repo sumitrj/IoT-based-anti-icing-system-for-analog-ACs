@@ -13,7 +13,7 @@ General user responds to this condition by manually switching off the air-condit
 #### 2. Interfacing the switch of the AC with Relay which can be controlled by digital signals(5V/0V) of Microcontrollers.
 #### 3. Temperature Feedback based system to switch off AC as pipe temperature gies below 5 degrees C.
 
-## Hardware Components List
+## Hardware Requirements
 
 ##### 1. Atmel AT Tiny 85 - Microcontroller
 ##### 2. TTL based ADC
@@ -21,7 +21,7 @@ General user responds to this condition by manually switching off the air-condit
 ##### 4. A pair of LM-35 Temperature Sensors
 ##### 5. Relay module with impedence matching circuit
 
-## Software 
+## Software Requirements
 ##### 1. Embedded C IDE for programming the AT Tiny 85
 ##### 2. Python 3.6
 ##### 3. SMTP - Library to send Emails
