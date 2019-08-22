@@ -14,6 +14,7 @@ while True:
     if(T1>5):
         f = 1
     notify(T2,f)
+    upload(T1,T2,f)
     
 def notify(u,f):
     import smtplib
@@ -30,3 +31,27 @@ def notify(u,f):
         t = 'AC Frozen'
     msg['Subject'] = t
     s.sendmail("Email1","Email2",msg.as_string())
+    
+def upload(T1,T2,f):
+    
+    import pyrebase
+    
+    firebaseConfig = {
+    apiKey: "AIzaSyAes_2s17si0I7I7sPH3pAGVhhzc8I7Uvg",
+    authDomain: "microproject-e091e.firebaseapp.com",
+    databaseURL: "https://microproject-e091e.firebaseio.com",
+    projectId: "microproject-e091e",
+    storageBucket: "microproject-e091e.appspot.com",
+    messagingSenderId: "272254815642",
+    appId: "1:272254815642:web:c585021d85413169"
+    }
+    
+    firebase=pyrebase.initialize_app(firebaseConfig)
+    #creating database
+    db=firebase.database()
+    
+    #defining data
+    data={"Pipe Temperature":str(T1), "Room Temperature":Str(T2) , }
+    
+
+ 
