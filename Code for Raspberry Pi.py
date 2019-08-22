@@ -51,7 +51,7 @@ def upload(T1,T2,f):
     db=firebase.database()
     
     #defining data
-    data={"Pipe Temperature":str(T1), "Room Temperature":Str(T2) , }
-    
-
+    data={"Pipe Temperature":str(T1), "Room Temperature":str(T2) }
+    db.child("AC").child("Room Environment Temperature").update({"Room Temperature":str(T2)})
+    db.child("AC").child("Pipe Temperature").update({"Pipe Temperature":str(T1)})
  
