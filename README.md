@@ -48,4 +48,4 @@ General user responds to this condition by manually switching off the air-condit
     if(pipe temperature is less than 5 degrees Celcius):
         SendMail('Frozen')
     else
-        SendMail('AC status' : On/Off)
+        SendMail(Room Environment Temperature)
