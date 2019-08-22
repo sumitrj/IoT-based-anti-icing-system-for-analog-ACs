@@ -1,12 +1,7 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[ ]:
-
-
 import serial
+#Check available USB ports using ls /dev/tty* in the Terminal
 ser = serial.Serial(
-    port='COM9',\ #Check available USB ports using ls /dev/tty* in the Terminal
+    port='COM9',\ 
     baudrate=9600,    bytesize=serial.EIGHTBITS,        timeout=0)
 
 print("connected to: " + ser.portstr)
@@ -35,10 +30,3 @@ def notify(u,f):
         t = 'AC Frozen'
     msg['Subject'] = t
     s.sendmail("Email1","Email2",msg.as_string())
-
-
-# In[ ]:
-
-
-
-
