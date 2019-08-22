@@ -49,3 +49,5 @@ General user responds to this condition by manually switching off the air-condit
         SendMail('Frozen')
     else
         SendMail(Room Environment Temperature)
+  
+### The reader is advised to visit https://console.firebase.google.com and create a new project in order to obtain API keys needed to open, store and access database on firebase
