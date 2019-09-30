@@ -32,11 +32,11 @@ General user responds to this condition by manually switching off the air-condit
 
 ### In Microcontroller (ATMEL ATTiny85):
 
-    Temperature of the pipe and the room are aqcuired using a pair of LM35
+    Temperature of the pipe and the room are aqcuired using a pair of LM35 and a DTH11
     
         if(pipe temperature is less than 5 degrees Celcius):
             Send Signal to Relay to switch off the AC
-        else if(Room Temperature is less than 20 degrees Celcius):
+        else if(Room Temperature is less than 20 degrees Celcius and humidity is less than 20%):
              Send Signal to Relay to switch off the AC
         else 
           Send Signal to Relay to switch On the AC
