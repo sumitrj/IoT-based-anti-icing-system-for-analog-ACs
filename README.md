@@ -1,4 +1,4 @@
-# IoT-based-anti-icing-system-for-analog-ACs
+# IoT-based-anti-icing-system-for-analog-Air Conditioners
 
 ## Requirement
 Considering Economic conditions of most population in India, it is rare to observe an average person purchase 2 air-conditioners in a decade. 
