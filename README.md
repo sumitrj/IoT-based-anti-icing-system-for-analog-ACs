@@ -18,18 +18,3 @@ You'll also need a basic understanding of electronics and programming in order t
 Installing
 To use the system, follow these steps:
 
-Assemble the hardware according to the schematic provided in the repository (schematics/anti-icing-system-schematic.png).
-
-Connect the ESP8266 to your computer and upload the code (src/anti_icing_system.ino) using the Arduino IDE or another suitable programming environment.
-
-Connect the heating element to the relay module and the relay module to the microcontroller, following the pin assignments in the code.
-
-Power on the system and monitor the temperature and humidity readings using the serial monitor in the Arduino IDE or a similar tool.
-
-Adjust the temperature and humidity thresholds in the code as needed to suit your specific AC unit and environment.
-
-License
-This project is licensed under the MIT License - see the LICENSE file for details.
-
-Acknowledgments
-This project was inspired by the work of other DIY anti-icing system builders and is intended as a proof-of-concept for an IoT-based system. Special thanks to the creators of the DHT11 and ESP8266 libraries for making this project possible.
